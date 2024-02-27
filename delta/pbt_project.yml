@@ -25,6 +25,20 @@ pipelines:
       outputs: []
     subgraphs: []
     dependencies: {}
+  pipelines/Pipeline02:
+    name: Pipeline02
+    description: ''
+    author: pankaj@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-02-27 18:41:44'
+    datasets:
+      inputs:
+      - datasets/newDS
+      outputs: []
+    subgraphs: []
+    dependencies: {}
 datasets:
   datasets/newDS:
     name: newDS
