@@ -1,0 +1,107 @@
+name: ExternalReleaseSetup01
+description: ''
+version: 0.0.1
+author: pankaj@prophecy.io
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: externalreleasesetup01
+  parentArtefactID: pankajprophecyioteam
+  buildSystem: wheel
+  author: null
+  createdAt: '2024-02-27 18:36:32'
+pipelines:
+  pipelines/Pipeline01:
+    name: Pipeline01
+    description: ''
+    author: pankaj@prophecy.io
+    mode: batch
+    artefactID: ''
+    language: python
+    createdAt: '2024-02-27 18:36:32'
+    datasets:
+      inputs:
+      - datasets/newDS
+      outputs: []
+    subgraphs: []
+    dependencies: {}
+datasets:
+  datasets/newDS:
+    name: newDS
+    description: ''
+    author: pankaj@prophecy.io
+    createdAt: '2024-02-27 18:37:53'
+    mode: batch
+    physicalDatasets:
+      fabric_dev_012:
+        fabricId: 29
+        datasetType: File
+        description: ''
+        author: pankaj@prophecy.io
+        createdAt: '2024-02-27 18:37:53'
+templates: {}
+jobs:
+  jobs/newJob01:
+    name: newJob01
+    description: ''
+    fabricUID: 29
+    scheduler:
+      Databricks: {}
+    cloudProvider: null
+    jobSize: small
+    scheduleCron: 0 0 0 1/1 * ? *
+    timeout: null
+    alerting:
+      emails: ''
+      onStart: false
+      onSuccess: false
+      onFailure: false
+    pipelines:
+    - pipelines/Pipeline01
+    jobClusterMode:
+      clusterMode:
+        Single: {}
+      clusterId: null
+    enabled: null
+    createdAt: '2024-02-27 18:38:08'
+    author: pankaj@prophecy.io
+gemContainer:
+  languageVersion: '3.10'
+  gemLibsVersion: 1.3.4.0
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-02-27 18:36:32'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies:
+  '33':
+    projectUID: 33
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/DTAcEZUO_team_5/iaRHA2Zs_project_33.git&subPath=
+    version: 0.2.4
+    isDefault: true
+    author: null
+    createdAt: '2024-02-27 18:36:24'
+  '34':
+    projectUID: 34
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/DTAcEZUO_team_5/iaRHA2Zs_project_34.git&subPath=
+    version: 0.0.3
+    isDefault: true
+    author: null
+    createdAt: '2024-02-27 18:36:24'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
