@@ -3,11 +3,17 @@
     "migrationVersions" : {
       "gemBuilderVersion" : "v1"
     },
+    "functions" : { },
     "codeGenConfiguration" : {
-      "editableConfig" : true
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.0.31",
+        "pyPiVersion" : "1.9.10"
+      }
     },
     "id" : "1",
     "uri" : "pipelines/Pipeline01",
+    "sourceSuggestions" : [ ],
     "language" : "python",
     "fabricId" : "29",
     "frontEndLanguage" : "sql",
@@ -60,43 +66,10 @@
       "value" : 1000
     },
     "topLevelPackage" : "pipeline01",
-    "configurationVersion" : "v1"
+    "configurationVersion" : "v2"
   },
-  "connections" : [ {
-    "id" : "RURa2-iKKS0xEpd90RofG$$05xN7xoGuuMZuOSJxj9vL",
-    "source" : "UonQbtdUN3a3-uLR9sL6s$$YV4QOJP9eqdWAwUczuTk5",
-    "sourcePort" : "hErfPHBs0gCvx-I_sYfx-$$XDpDN2Xdmq0rATOMyc5WP",
-    "target" : "bMjreLJFp32LeG-NN08ik$$Z_uBs5MGwoiZKjerQNzPf",
-    "targetPort" : "LWP-7UtcqN5_R_OMH-YoG$$ps6F-WpV8qz2JapCcNxGS"
-  } ],
+  "connections" : [ ],
   "processes" : {
-    "UonQbtdUN3a3-uLR9sL6s$$YV4QOJP9eqdWAwUczuTk5" : {
-      "id" : "UonQbtdUN3a3-uLR9sL6s$$YV4QOJP9eqdWAwUczuTk5",
-      "component" : "Source",
-      "metadata" : {
-        "label" : "newDS",
-        "slug" : "newDS",
-        "x" : -500,
-        "y" : -300,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ ],
-        "outputs" : [ {
-          "id" : "hErfPHBs0gCvx-I_sYfx-$$XDpDN2Xdmq0rATOMyc5WP",
-          "slug" : "out"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false,
-        "autoUpdateOnRun" : false
-      },
-      "properties" : {
-        "datasetId" : "datasets/newDS"
-      }
-    },
     "bMjreLJFp32LeG-NN08ik$$Z_uBs5MGwoiZKjerQNzPf" : {
       "id" : "bMjreLJFp32LeG-NN08ik$$Z_uBs5MGwoiZKjerQNzPf",
       "component" : "Reformat",
@@ -113,66 +86,7 @@
       "ports" : {
         "inputs" : [ {
           "id" : "LWP-7UtcqN5_R_OMH-YoG$$ps6F-WpV8qz2JapCcNxGS",
-          "slug" : "in0",
-          "schema" : {
-            "type" : "struct",
-            "fields" : [ {
-              "name" : "order_id",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "customer_id",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "order_status",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "order_category",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "order_date",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            }, {
-              "name" : "amount",
-              "type" : "string",
-              "nullable" : true,
-              "metadata" : {
-                "description" : "",
-                "mappings" : [ ],
-                "tags" : [ ]
-              }
-            } ]
-          },
-          "isStreaming" : false
+          "slug" : "in0"
         } ],
         "outputs" : [ {
           "id" : "01gUEp-PLK8BxyhuEwT75$$PCUvAV1lGzCzRi0bibrsN",
@@ -201,5 +115,22 @@
     "selectedInputFields" : [ ],
     "isCustomOutputSchema" : false,
     "autoUpdateOnRun" : false
-  }
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.bMjreLJFp32LeG-NN08ik$$Z_uBs5MGwoiZKjerQNzPf.ports.inputs[0]",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "Please connect input port in0",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
 }

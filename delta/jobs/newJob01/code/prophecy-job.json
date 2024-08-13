@@ -68,6 +68,19 @@
         "PublicCentral" : { }
       }
     }, {
+      "id" : "32",
+      "name" : "uc_enabled_fabric",
+      "clusterSizes" : {
+        "default" : "small",
+        "availableClusterSizes" : [ "small" ]
+      },
+      "pylibsResolutionMode" : {
+        "PublicCentral" : { }
+      },
+      "scalalibsResolutionMode" : {
+        "PublicCentral" : { }
+      }
+    }, {
       "id" : "17",
       "name" : "db_fabric_003",
       "clusterSizes" : {
