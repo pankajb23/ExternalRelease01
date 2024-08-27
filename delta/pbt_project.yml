@@ -83,7 +83,19 @@ jobs:
 gemContainer:
   languageVersion: '3.10'
   gemLibsVersion: 1.3.4.0
-  gems: {}
+  gems:
+    gems/RandomGem01:
+      name: RandomGem01
+      category: Transform
+      subCategory: ''
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      mode: batch
+      files:
+      - pankajprophecyioteam_externalreleasesetup01/gems/RandomGem01.py
+      gemType: ComponentGem
+      dependencies: null
+      createdAt: '2024-08-27 09:03:37'
   dependencies: null
 functions:
   author: null
@@ -109,29 +121,33 @@ dependencies:
   version: 8.1.4
   id: '1811573474'
   createdAt: '2024-08-27T08:13:33.984895Z'
+  enabled: true
+  entity: Project
 - type: plibPypi
   modifiedAt: '2024-08-27T08:13:33.984979Z'
   name: plibPypi
-  version: 1.9.14.dev0
+  version: 1.9.14
   id: '1645810754'
   createdAt: '2024-08-27T08:13:33.98497Z'
+  enabled: true
+  entity: Project
 projectDependencies:
   '42':
     projectUID: 42
     projectName: ProphecySparkBasicsPython
     repositoryPath: gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_42.git&subPath=
-    version: 0.2.4
+    version: 0.2.27.dev3
     isDefault: true
     author: null
-    createdAt: '2024-02-27 18:36:24'
+    createdAt: '2024-08-27 09:01:41'
   '43':
     projectUID: 43
     projectName: ProphecyWarehousePython
     repositoryPath: gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_43.git&subPath=
-    version: 0.0.3
+    version: 0.0.8
     isDefault: true
     author: null
-    createdAt: '2024-02-27 18:36:24'
+    createdAt: '2024-08-27 09:03:12'
 flags:
   shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}

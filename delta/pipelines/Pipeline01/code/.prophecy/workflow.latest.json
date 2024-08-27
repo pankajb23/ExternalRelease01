@@ -8,7 +8,7 @@
       "editableConfig" : true,
       "plibVersion" : {
         "mavenVersion" : "8.1.4",
-        "pyPiVersion" : "1.9.14.dev0"
+        "pyPiVersion" : "1.9.14"
       }
     },
     "id" : "1",
@@ -104,7 +104,7 @@
         "columnsSelector" : [ ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_42.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=42&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_42.git&subPath=&tag=0.2.27.dev3&projectSubscriptionProjectId=42&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     }
