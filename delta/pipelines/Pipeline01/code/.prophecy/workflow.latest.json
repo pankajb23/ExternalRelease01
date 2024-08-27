@@ -7,15 +7,15 @@
     "codeGenConfiguration" : {
       "editableConfig" : true,
       "plibVersion" : {
-        "mavenVersion" : "8.0.31",
-        "pyPiVersion" : "1.9.10"
+        "mavenVersion" : "8.1.4",
+        "pyPiVersion" : "1.9.14.dev0"
       }
     },
     "id" : "1",
     "uri" : "pipelines/Pipeline01",
     "sourceSuggestions" : [ ],
     "language" : "python",
-    "fabricId" : "29",
+    "fabricId" : "3",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -49,11 +49,11 @@
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
     "dependentProjectExternalDependencies" : [ {
-      "projectUID" : "33",
+      "projectUID" : "42",
       "projectName" : "ProphecySparkBasicsPython",
       "externalDependencies" : [ ]
     }, {
-      "projectUID" : "34",
+      "projectUID" : "43",
       "projectName" : "ProphecyWarehousePython",
       "externalDependencies" : [ ]
     } ],
@@ -104,7 +104,7 @@
         "columnsSelector" : [ ]
       },
       "componentInfo" : {
-        "gemId" : "gitUri=http://gitserver:3000/DTAcEZUO_team_5/iaRHA2Zs_project_33.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=33&path=gems/Reformat",
+        "gemId" : "gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_42.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=42&path=gems/Reformat",
         "projectName" : "ProphecySparkBasicsPython"
       }
     }

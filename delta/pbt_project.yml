@@ -104,30 +104,30 @@ sqlUnreferencedSources: {}
 sqlPipeline: null
 dependencies:
 - type: plibMaven
-  modifiedAt: '2024-08-13T10:16:58.210781Z'
+  modifiedAt: '2024-08-27T08:13:33.984939Z'
   name: plibMaven
-  version: 8.0.31
-  id: '795922506'
-  createdAt: '2024-08-13T10:16:58.210674Z'
+  version: 8.1.4
+  id: '1811573474'
+  createdAt: '2024-08-27T08:13:33.984895Z'
 - type: plibPypi
-  modifiedAt: '2024-08-13T10:16:58.211745Z'
+  modifiedAt: '2024-08-27T08:13:33.984979Z'
   name: plibPypi
-  version: 1.9.10
-  id: '539692254'
-  createdAt: '2024-08-13T10:16:58.211711Z'
+  version: 1.9.14.dev0
+  id: '1645810754'
+  createdAt: '2024-08-27T08:13:33.98497Z'
 projectDependencies:
-  '33':
-    projectUID: 33
+  '42':
+    projectUID: 42
     projectName: ProphecySparkBasicsPython
-    repositoryPath: gitUri=http://gitserver:3000/DTAcEZUO_team_5/iaRHA2Zs_project_33.git&subPath=
+    repositoryPath: gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_42.git&subPath=
     version: 0.2.4
     isDefault: true
     author: null
     createdAt: '2024-02-27 18:36:24'
-  '34':
-    projectUID: 34
+  '43':
+    projectUID: 43
     projectName: ProphecyWarehousePython
-    repositoryPath: gitUri=http://gitserver:3000/DTAcEZUO_team_5/iaRHA2Zs_project_34.git&subPath=
+    repositoryPath: gitUri=http://gitserver:3000/9gt3CHHz_team_9/pJIIcs5r_project_43.git&subPath=
     version: 0.0.3
     isDefault: true
     author: null
