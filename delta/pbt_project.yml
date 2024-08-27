@@ -1,6 +1,6 @@
 name: ExternalReleaseSetup01
 description: ''
-version: 0.0.72
+version: 0.0.89
 author: pankaj@prophecy.io
 language: python
 buildSystem: ''
