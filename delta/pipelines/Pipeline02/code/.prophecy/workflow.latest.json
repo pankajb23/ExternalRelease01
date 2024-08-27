@@ -82,8 +82,8 @@
       "metadata" : {
         "label" : "newDS",
         "slug" : "newDS",
-        "x" : -840,
-        "y" : -420,
+        "x" : -1000,
+        "y" : -340,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
