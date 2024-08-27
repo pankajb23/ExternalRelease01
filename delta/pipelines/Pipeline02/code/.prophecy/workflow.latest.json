@@ -15,7 +15,7 @@
     "uri" : "pipelines/Pipeline02",
     "sourceSuggestions" : [ ],
     "language" : "python",
-    "fabricId" : "3",
+    "fabricId" : "9",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -82,8 +82,8 @@
       "metadata" : {
         "label" : "newDS",
         "slug" : "newDS",
-        "x" : -500,
-        "y" : -300,
+        "x" : -840,
+        "y" : -420,
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
