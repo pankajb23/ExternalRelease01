@@ -64,7 +64,7 @@
       },
       "libraries" : [ {
         "maven" : {
-          "coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.0.31"
+          "coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.1.4"
         }
       }, {
         "whl" : "dbfs:/tmp/prophecy_libs-1.8.11-py3-none-any.whl"

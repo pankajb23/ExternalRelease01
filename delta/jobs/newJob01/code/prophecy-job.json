@@ -63,7 +63,7 @@
         "configurations" : {
           "schema" : [ ],
           "instances" : {
-            "ExternalReleaseSetup01" : [ "default" ]
+            "ExternalReleaseSetup02" : [ "default" ]
           },
           "overrides" : { },
           "selectedInstance" : "default"
