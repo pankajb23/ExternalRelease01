@@ -2,7 +2,7 @@
   "fabric_id" : "29",
   "components" : [ {
     "PipelineComponent" : {
-      "path" : "dbfs:/FileStore/prophecy/artifacts/dev/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline01-1.0-py3-none-any.whl",
+      "path" : "dbfs:/Volumes/rajat/default/testvolume/prophecy/dev/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline01-1.0-py3-none-any.whl",
       "nodeName" : "Pipeline01",
       "id" : "yDUOJ3MGp2mhwIflwuiq4",
       "language" : "python",
@@ -15,7 +15,7 @@
     "job_clusters" : [ {
       "job_cluster_key" : "newJob01_default_small",
       "new_cluster" : {
-        "spark_version" : "12.2.x-scala2.12",
+        "spark_version" : "13.3.x-scala2.12",
         "node_type_id" : "m7gd.large",
         "num_workers" : 0,
         "custom_tags" : {
@@ -64,15 +64,15 @@
       },
       "libraries" : [ {
         "maven" : {
-          "coordinates" : "io.prophecy:prophecy-libs_2.12:3.3.0-8.1.4"
+          "coordinates" : "io.prophecy:prophecy-libs_2.12:3.4.0-8.3.0-SNAPSHOT",
+          "repo" : "https://s01.oss.sonatype.org/content/repositories/snapshots/"
         }
       }, {
         "whl" : "dbfs:/tmp/prophecy_libs-1.8.11-py3-none-any.whl"
       }, {
-        "whl" : "dbfs:/FileStore/prophecy/artifacts/dev/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline01-1.0-py3-none-any.whl"
+        "whl" : "dbfs:/Volumes/rajat/default/testvolume/prophecy/dev/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline01-1.0-py3-none-any.whl"
       } ],
-      "email_notifications" : { },
-      "max_retries" : 0
+      "email_notifications" : { }
     } ],
     "max_concurrent_runs" : 1,
     "schedule" : {
