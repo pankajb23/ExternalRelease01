@@ -2,11 +2,11 @@
   "fabric_id" : "29",
   "components" : [ {
     "PipelineComponent" : {
-      "path" : "dbfs:/Volumes/rajat/default/testvolume/prophecy/dev/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline02-1.0-py3-none-any.whl",
-      "nodeName" : "Pipeline02",
+      "path" : "dbfs:/FileStore/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline01-1.0-py3-none-any.whl",
+      "nodeName" : "Pipeline01",
       "id" : "yDUOJ3MGp2mhwIflwuiq4",
       "language" : "python",
-      "pipelineId" : "pipelines/Pipeline02"
+      "pipelineId" : "pipelines/Pipeline01"
     }
   } ],
   "request" : {
@@ -15,29 +15,23 @@
     "job_clusters" : [ {
       "job_cluster_key" : "newJob01_default_small",
       "new_cluster" : {
-        "spark_version" : "13.3.x-scala2.12",
-        "node_type_id" : "m7gd.large",
-        "num_workers" : 0,
-        "custom_tags" : {
-          "ResourceClass" : "SingleNode"
-        },
-        "enable_elastic_disk" : false,
+        "ssh_public_keys" : [ ],
+        "spark_version" : "14.3.x-scala2.12",
+        "node_type_id" : "i3.xlarge",
+        "num_workers" : 1,
+        "custom_tags" : { },
+        "init_scripts" : [ ],
         "spark_conf" : {
-          "spark.databricks.cluster.profile" : "singleNode",
-          "spark.master" : "local[*, 4]",
           "spark.prophecy.metadata.fabric.id" : "29",
           "spark.prophecy.metadata.job.uri" : "__PROJECT_ID_PLACEHOLDER__/jobs/newJob01",
           "spark.prophecy.metadata.is.interactive.run" : "false",
           "spark.prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
           "spark.prophecy.metadata.user.id" : "3",
-          "spark.prophecy.tasks" : "H4sIAAAAAAAAAKtWCsgsSM3JzEs1MFKyUiqAcor1kYRrAYDnVSglAAAA",
+          "spark.prophecy.tasks" : "H4sIAAAAAAAAAKtWCsgsSM3JzEs1MFSyUiqAcor1kYRrASG0RNglAAAA",
           "spark.prophecy.metadata.job.branch" : "__PROJECT_RELEASE_VERSION_PLACEHOLDER__",
           "spark.prophecy.metadata.url" : "__PROPHECY_URL_PLACEHOLDER__",
-          "spark.prophecy.execution.metrics.disabled" : "true",
-          "spark.prophecy.execution.metrics.component-metrics.table" : "prophecy_executionk3s_dev_cloud.component_runs",
-          "spark.prophecy.execution.metrics.pipeline-metrics.table" : "prophecy_executionk3s_dev_cloud.pipeline_runs",
-          "spark.prophecy.execution.service.url" : "wss://executionk3s.dev.cloud.prophecy.io/execution/eventws",
-          "spark.prophecy.execution.metrics.interims.table" : "prophecy_executionk3s_dev_cloud.interims2",
+          "spark.prophecy.execution.metrics.disabled" : "false",
+          "spark.prophecy.execution.service.url" : "wss://execution.staging.prophecy.io/eventws",
           "spark.databricks.isv.product" : "prophecy"
         },
         "spark_env_vars" : {
@@ -55,26 +49,26 @@
     } ],
     "email_notifications" : { },
     "tasks" : [ {
-      "task_key" : "Pipeline02",
+      "task_key" : "Pipeline01",
       "job_cluster_key" : "newJob01_default_small",
       "python_wheel_task" : {
-        "package_name" : "Pipeline02",
+        "package_name" : "Pipeline01",
         "entry_point" : "main",
         "parameters" : [ "-i", "default", "-O", "{}" ]
       },
       "libraries" : [ {
         "maven" : {
-          "coordinates" : "io.prophecy:prophecy-libs_2.12:3.4.0-8.3.0-SNAPSHOT",
-          "repo" : "https://s01.oss.sonatype.org/content/repositories/snapshots/"
+          "coordinates" : "io.prophecy:prophecy-libs_2.12:3.5.0-8.1.4"
         }
       }, {
         "pypi" : {
-          "package" : "prophecy-libs==1.9.16"
+          "package" : "prophecy-libs==1.9.14"
         }
       }, {
-        "whl" : "dbfs:/Volumes/rajat/default/testvolume/prophecy/dev/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline02-1.0-py3-none-any.whl"
+        "whl" : "dbfs:/FileStore/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline01-1.0-py3-none-any.whl"
       } ],
-      "email_notifications" : { }
+      "email_notifications" : { },
+      "max_retries" : 0
     } ],
     "max_concurrent_runs" : 1,
     "schedule" : {

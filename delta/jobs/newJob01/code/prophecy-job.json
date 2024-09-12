@@ -34,8 +34,8 @@
       "id" : "yDUOJ3MGp2mhwIflwuiq4",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "Pipeline02",
-        "slug" : "Pipeline02",
+        "label" : "Pipeline01",
+        "slug" : "Pipeline01",
         "x" : 100,
         "y" : 100
       },
@@ -59,11 +59,11 @@
         }
       },
       "properties" : {
-        "pipelineId" : "pipelines/Pipeline02",
+        "pipelineId" : "pipelines/Pipeline01",
         "configurations" : {
           "schema" : [ ],
           "instances" : {
-            "ExternalReleaseSetup02" : [ "default" ]
+            "ExternalReleaseSetup01" : [ "default" ]
           },
           "overrides" : { },
           "selectedInstance" : "default"
