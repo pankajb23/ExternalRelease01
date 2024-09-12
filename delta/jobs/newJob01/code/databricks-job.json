@@ -2,11 +2,11 @@
   "fabric_id" : "29",
   "components" : [ {
     "PipelineComponent" : {
-      "path" : "dbfs:/Volumes/rajat/default/testvolume/prophecy/dev/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline01-1.0-py3-none-any.whl",
-      "nodeName" : "Pipeline01",
+      "path" : "dbfs:/Volumes/rajat/default/testvolume/prophecy/dev/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline02-1.0-py3-none-any.whl",
+      "nodeName" : "Pipeline02",
       "id" : "yDUOJ3MGp2mhwIflwuiq4",
       "language" : "python",
-      "pipelineId" : "pipelines/Pipeline01"
+      "pipelineId" : "pipelines/Pipeline02"
     }
   } ],
   "request" : {
@@ -30,7 +30,7 @@
           "spark.prophecy.metadata.is.interactive.run" : "false",
           "spark.prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
           "spark.prophecy.metadata.user.id" : "3",
-          "spark.prophecy.tasks" : "H4sIAAAAAAAAAKtWCsgsSM3JzEs1MFSyUiqAcor1kYRrASG0RNglAAAA",
+          "spark.prophecy.tasks" : "H4sIAAAAAAAAAKtWCsgsSM3JzEs1MFKyUiqAcor1kYRrAYDnVSglAAAA",
           "spark.prophecy.metadata.job.branch" : "__PROJECT_RELEASE_VERSION_PLACEHOLDER__",
           "spark.prophecy.metadata.url" : "__PROPHECY_URL_PLACEHOLDER__",
           "spark.prophecy.execution.metrics.disabled" : "true",
@@ -55,10 +55,10 @@
     } ],
     "email_notifications" : { },
     "tasks" : [ {
-      "task_key" : "Pipeline01",
+      "task_key" : "Pipeline02",
       "job_cluster_key" : "newJob01_default_small",
       "python_wheel_task" : {
-        "package_name" : "Pipeline01",
+        "package_name" : "Pipeline02",
         "entry_point" : "main",
         "parameters" : [ "-i", "default", "-O", "{}" ]
       },
@@ -68,9 +68,11 @@
           "repo" : "https://s01.oss.sonatype.org/content/repositories/snapshots/"
         }
       }, {
-        "whl" : "dbfs:/tmp/prophecy_libs-1.8.11-py3-none-any.whl"
+        "pypi" : {
+          "package" : "prophecy-libs==1.9.16"
+        }
       }, {
-        "whl" : "dbfs:/Volumes/rajat/default/testvolume/prophecy/dev/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline01-1.0-py3-none-any.whl"
+        "whl" : "dbfs:/Volumes/rajat/default/testvolume/prophecy/dev/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/Pipeline02-1.0-py3-none-any.whl"
       } ],
       "email_notifications" : { }
     } ],

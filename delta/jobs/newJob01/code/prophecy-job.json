@@ -34,8 +34,8 @@
       "id" : "yDUOJ3MGp2mhwIflwuiq4",
       "component" : "Pipeline",
       "metadata" : {
-        "label" : "Pipeline01",
-        "slug" : "Pipeline01",
+        "label" : "Pipeline02",
+        "slug" : "Pipeline02",
         "x" : 100,
         "y" : 100
       },
@@ -59,7 +59,7 @@
         }
       },
       "properties" : {
-        "pipelineId" : "pipelines/Pipeline01",
+        "pipelineId" : "pipelines/Pipeline02",
         "configurations" : {
           "schema" : [ ],
           "instances" : {
